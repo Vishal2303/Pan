@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan Update Form</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        *{
+            margin: 3px 1px;
+        }
+
+        .prefix{
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color:rgb(230, 235, 175);">
+        <div style="background-color: rgb(104, 5, 5); color: white;">
+            <h5 style="text-align: center;">Requested for new pan card changes or correction</h5>
+            <p style="text-align: center;  font-style: italic;">Fields marked with <span>*</span>(asterik) are mandatory
+            </p>
+        </div>
+        <div style="font-weight: bold;">
+            <table style="width: 100% ;">
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <p style="display: inline;"><span>*</span>Whether he is a citizen of india</p>
+                        <div style="display: inline;">
+                            <label for="yes" style="padding-left: 80px;">Yes</label>
+                            <input type="radio" id="yes">
+                            <label for="no" style="padding-left: 10px;">No</label>
+                            <input type="radio" id="no">
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    <td colspan="2">
+                       <label for="pan"><span>*</span>Permanent Account Number PAN</label>
+                       <input type="text" name="" id="pan">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="" style="margin: 0.5px;">
+                        </td>
+                        <td colspan="2">
+                            <span>*</span>1.Name
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <p style="display: inline;">Title</p>
+                            <div style="display: inline;">
+                                <label for="yes" style="padding-left: 40px;">Shri/Mr</label>
+                                <input type="radio" id="yes">
+                                <label for="no" style="padding-left: 20px;">Smt/Mrs</label>
+                                <input type="radio" id="no">
+                                <label for="yes" style="padding-left: 20px;">Kumari/Ms</label>
+                                <input type="radio" id="yes">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <p>Lastname/Surname</p>
+                            <div style="display: block;">
+                                <label for="sur"></label>
+                                <input type="text" name="" id="sur">
+                            </div>
+
+                            <p style="display: inline;">Firstname</p>
+                            <div style="display: inline;">
+                                <label for="sur"></label>
+                                <input type="text" name="" id="sur">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <p style="display: inline;">Name as would you like to print on your card</p>
+                            <p class="prefix">(Prefix)</p>
+
+                        </td>
+                    </tr>
+                                  
+            </table>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
